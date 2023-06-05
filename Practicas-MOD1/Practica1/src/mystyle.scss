@@ -1,0 +1,113 @@
+main{
+    margin: 0 auto;
+}
+
+/* VARIABLES COLORES */
+
+$box-color1: #ec24bb;
+$box-color2: #39c0cc;
+
+
+/* CONTAINER 1 - FLEX */
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+
+ .box{
+    width: 100px;
+    height: 120px;
+    border-radius:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $box-color1;
+}
+
+ .base-color{
+    width: 100px;
+    color: white;
+}
+
+.darken-1{
+    background-color: darken($box-color1, 5%);
+    }
+    .darken-2{
+    background-color: darken($box-color1, 10%);
+    }
+    .darken-3{
+    background-color: darken($box-color1, 15%);
+    }
+    .darken-4{
+    background-color: darken($box-color1, 20%);
+    }
+    .lighten-1{
+    background-color: lighten($box-color1, 5%);
+    }
+    .lighten-2{
+    background-color: lighten($box-color1, 15%);
+    }
+    .lighten-3{
+    background-color: lighten($box-color1, 25%);
+    }
+    .lighten-4{
+    background-color: lighten($box-color1, 30%);
+    }
+
+}
+
+
+/* CONTAINER 2 - GRID */
+
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    justify-content: center;
+    gap: 7px;
+    margin-top: 10px;
+
+
+ .box{
+    width: 100px;
+    height: 120px;
+    border-radius:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $box-color2;
+}
+
+ .base-color{
+    width: 100px;
+    color: white;
+}
+
+.darken-1{
+background-color: darken($box-color2, 5%);
+}
+.darken-2{
+background-color: darken($box-color2, 10%);
+}
+.darken-3{
+background-color: darken($box-color2, 15%);
+}
+.darken-4{
+background-color: darken($box-color2, 20%);
+}
+.lighten-1{
+background-color: lighten($box-color2, 5%);
+}
+.lighten-2{
+background-color: lighten($box-color2, 15%);
+}
+.lighten-3{
+background-color: lighten($box-color2, 25%);
+}
+.lighten-4{
+background-color: lighten($box-color2, 30%);
+}
+
+}

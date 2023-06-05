@@ -1,0 +1,114 @@
+main {
+  margin: 0 auto;
+}
+
+.container-1 {
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+
+.container-1 .box {
+  width: 100px;
+  height: 120px;
+  background-color: #ec24bb;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-1 .base-color {
+  width: 100px;
+  color: #fff;
+}
+
+.container-1 .darken-1 {
+  background-color: #e314b0;
+}
+
+.container-1 .darken-2 {
+  background-color: #cb129e;
+}
+
+.container-1 .darken-3 {
+  background-color: #b4108c;
+}
+
+.container-1 .darken-4 {
+  background-color: #9c0e79;
+}
+
+.container-1 .lighten-1 {
+  background-color: #ee3bc2;
+}
+
+.container-1 .lighten-2 {
+  background-color: #f26ad1;
+}
+
+.container-1 .lighten-3 {
+  background-color: #f699df;
+}
+
+.container-1 .lighten-4 {
+  background-color: #f8b1e7;
+}
+
+.container-2 {
+  grid-template-columns: repeat(9, 100px);
+  justify-content: center;
+  gap: 7px;
+  margin-top: 10px;
+  display: grid;
+}
+
+.container-2 .box {
+  width: 100px;
+  height: 120px;
+  background-color: #39c0cc;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-2 .base-color {
+  width: 100px;
+  color: #fff;
+}
+
+.container-2 .darken-1 {
+  background-color: #30b0bb;
+}
+
+.container-2 .darken-2 {
+  background-color: #2b9da7;
+}
+
+.container-2 .darken-3 {
+  background-color: #268a93;
+}
+
+.container-2 .darken-4 {
+  background-color: #21777e;
+}
+
+.container-2 .lighten-1 {
+  background-color: #4dc6d1;
+}
+
+.container-2 .lighten-2 {
+  background-color: #76d3dc;
+}
+
+.container-2 .lighten-3 {
+  background-color: #9ee0e6;
+}
+
+.container-2 .lighten-4 {
+  background-color: #b3e7eb;
+}
+
+/*# sourceMappingURL=index.23312501.css.map */

@@ -1,0 +1,41 @@
+.box, .container-1 .box__shadow, .container-1 .box__warning, .container-1 .box__important, .container-1 .box__base {
+  width: 100px;
+  height: 120px;
+  border-radius: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.container-1 {
+  margin: 0 auto;
+}
+
+.container-1 .box__base {
+  background-color: green;
+}
+
+.container-1 .box__important {
+  background-color: #ff0;
+}
+
+.container-1 .box__warning {
+  background-color: orange;
+}
+
+.container-1 .text__principal {
+  font-family: Courier New, Courier, monospace;
+}
+
+.container-1 .text__secondary {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-1 .box__shadow {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: -10px 10px 10px #000;
+}
+
+/*# sourceMappingURL=index.23312501.css.map */
