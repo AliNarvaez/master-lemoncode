@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { MemberDetailEntity } from "./member-detail.vm";
@@ -9,6 +10,7 @@ interface Props {
 export const MemberDetail: React.FC<Props> = (props) => {
     const { member } = props;
      const navigate = useNavigate();
+     console.log(member)
 
     return <>
           {member ? (
@@ -23,13 +25,12 @@ export const MemberDetail: React.FC<Props> = (props) => {
         <div>loading...</div>
       )}
 
-      <button
+      <Button variant="outlined"
         onClick={() => {
           navigate(-1);
-        }}
-      >
-        Atrás
-      </button>
+        }}>
+        Back
+        </Button>
 
     </>;
 }

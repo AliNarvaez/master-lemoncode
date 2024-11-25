@@ -1,4 +1,3 @@
-import { validationResult } from "express-validator/check";
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -44,14 +43,13 @@ export const Login: React.FC<Props> = (props) => {
   };
 
   return (
-    <Card sx={{ padding: "10px" }}>
-      <CardHeader title="Hello from login page" />
+    <Card sx={{ padding: "10px", margin: "30px" }}>
+      <CardHeader title="Welcome!" />
       <CardContent>
         <form onSubmit={handleSubmit}>
           <div>
             <div>
-              <label>Username: </label>
-              <TextField
+              <TextField label="Username" variant="outlined"
                 name="username"
                 value={formData.username}
                 onChange={handlechange("username")}
@@ -61,8 +59,7 @@ export const Login: React.FC<Props> = (props) => {
             </div>
 
             <div>
-              <label>Password: </label>
-              <TextField
+              <TextField sx={{ marginTop: "10px" }} label="Password" variant="outlined"
                 name="password"
                 type="password"
                 value={formData.password}
@@ -72,7 +69,7 @@ export const Login: React.FC<Props> = (props) => {
               />
             </div>
 
-            <Button type="submit" disabled={hasError} variant="contained">
+            <Button sx={{ marginTop: "10px" }} className="login-button" type="submit" disabled={hasError} variant="contained" size="large">
               Login
             </Button>
           </div>

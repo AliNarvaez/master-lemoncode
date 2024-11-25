@@ -1,8 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import { MemberDetail } from "./member-detail.component";
 import { MemberDetailEntity } from "./member-detail.vm";
-
 
 interface Props{
 login: string;

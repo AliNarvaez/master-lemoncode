@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { routes } from "@/router";
 import { Member } from "../member-list.vm";
+import { Button } from "@mui/material";
 
 interface Props {
     member: Member;
@@ -12,10 +13,10 @@ export const MemberRow: React.FC<Props> = (props) => {
     const {member, onClick} = props;
     return (
     <>
-    <img src={member.avatar_url} alt="" />
+    <img src={member.avatarUrl} alt="" />
     <div>{member.id}</div>
     <div>
-      <div onClick={onClick}>{member.login}</div>
+      <Button variant="outlined" onClick={onClick}>{member.login}</Button>
     </div>
     </>
     );

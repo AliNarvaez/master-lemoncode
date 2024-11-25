@@ -7,5 +7,5 @@ export const mapMemberListToVM = (data: am.Member[]): vm.Member[] =>
 const mapMemberToVM = (data: am.Member): vm.Member => ({
   id: data.id,
   login: data.login,
-  avatar_url: data.avatar_url,
+  avatarUrl: data.avatar_url,
 });

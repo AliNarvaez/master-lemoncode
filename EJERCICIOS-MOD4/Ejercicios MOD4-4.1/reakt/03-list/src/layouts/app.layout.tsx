@@ -7,7 +7,7 @@ export const AppLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
 
   return (
     <div className="layout-app-container">
-      <div className="layout-app-header">User: {username}</div>
+      <div className="layout-app-header">Hi {username}</div>
       {children}
     </div>
   );

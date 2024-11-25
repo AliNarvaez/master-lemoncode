@@ -1,4 +1,5 @@
 import React from "react";
+import { OrganizationProvider } from "./core/providers/organization/organization.provider";
 import { UserProfileProvider } from "./core/providers/user_profile/user.profile.provider";
 import { AppRouter } from "./router/app.router";
 
@@ -28,24 +29,21 @@ const MembersProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
     setMembers([]);
   };
 
-  // const loadMembers = (org: string) => {}; para filtrar por mas org SESION 4 2:30
-
-  return (
-    <MembersContext.Provider value={{ members, clear }}>
-      {children}
-    </MembersContext.Provider>
-  );
+  return <MembersContext.Provider value={{ members, clear }}>{children}</MembersContext.Provider>;
 };
 
 export const App = () => {
   return (
     <>
-      <h2 style={{ backgroundColor: "darkorange" }}>Lemoncoders Members</h2>
+      <h1 style={{ textAlign: "center" }}>OrgiFinder</h1>
+      <h2 className="page-subtitle">Your favourite Github organization members finder</h2>
 
       <UserProfileProvider>
-          <MembersProvider>
+        <MembersProvider>
+          <OrganizationProvider>
             <AppRouter />
-          </MembersProvider>
+          </OrganizationProvider>
+        </MembersProvider>
       </UserProfileProvider>
     </>
   );

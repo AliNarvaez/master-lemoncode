@@ -2,14 +2,23 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
 }
 
 .layout-app-header{
-    color: white;
-    background-color: green;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding-right: 5px;
 
 }
+
+.layout-app-container img {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
