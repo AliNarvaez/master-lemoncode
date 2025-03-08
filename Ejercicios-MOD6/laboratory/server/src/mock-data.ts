@@ -73,6 +73,7 @@ export const character: Character[] = [
     ],
     url: 'https://rickandmortyapi.com/api/character/1',
     created: '2017-11-04T18:48:46.250Z',
+    bestSentence: ""
   },
   {
     id: 2,
@@ -145,6 +146,7 @@ export const character: Character[] = [
     ],
     url: 'https://rickandmortyapi.com/api/character/2',
     created: '2017-11-04T18:50:21.651Z',
+    bestSentence: ""
   },
   {
     id: 3,
@@ -208,6 +210,7 @@ export const character: Character[] = [
     ],
     url: 'https://rickandmortyapi.com/api/character/3',
     created: '2017-11-04T19:09:56.428Z',
+    bestSentence: ""
   },
   {
     id: 4,
@@ -271,6 +274,7 @@ export const character: Character[] = [
     ],
     url: 'https://rickandmortyapi.com/api/character/4',
     created: '2017-11-04T19:22:43.665Z',
+    bestSentence: ""
   },
   {
     id: 5,
@@ -331,5 +335,6 @@ export const character: Character[] = [
     ],
     url: 'https://rickandmortyapi.com/api/character/5',
     created: '2017-11-04T19:26:56.301Z',
+    bestSentence: ""
   },
 ];

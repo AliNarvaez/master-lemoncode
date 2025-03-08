@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar/Avatar';
 import IconButton from '@mui/material/IconButton/IconButton';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -22,12 +21,12 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   const { character, onEdit, onDelete } = props;
 
   return (
-    <Card onClick={() => onEdit(character.id)} className={classes.content}>
+    <Card>
       <CardHeader
         title={character.name}
         subheader={character.species}
       />
-      <CardContent>
+      <CardContent onClick={() => onEdit(character.id)} className={classes.content}>
         <div className={classes.content}>
           <CardMedia
             image={character.image}
@@ -37,7 +36,11 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           <Typography variant="subtitle1" gutterBottom>
             {character.status}
           </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            {character.bestSentence}
+          </Typography>
         </div>
+        
       </CardContent>
       <CardActions>
         <IconButton onClick={() => onEdit(character.id)}>

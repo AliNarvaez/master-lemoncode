@@ -1,33 +1,30 @@
 import axios from 'axios';
 import { Character } from './character.api-model';
 
-// const characterUrl = 'https://rickandmortyapi.com/api/character';
-const MockCharacterUrl = '/api/character';
+const characterUrl = 'https://rickandmortyapi.com/api/character';
+// const characterUrl = '/api/character';
 
 
 export const getCharacter = async (id: number): Promise<Character> => {
   try {
-    const { data } = await axios.get<Character>(`${MockCharacterUrl}/${id}`);
+    const { data } = await axios.get<Character>(`${characterUrl}/${id}`);
     return data;
   } catch (error) {
     console.error('Error fetching character');
-    throw error;
   }
 };
 
 export const saveCharacter = async (character: Character): Promise<boolean> => {
-  console.log('Saving character:', character);
-
   try {
     if (character.id) {
       //update
       await axios.put<Character>(
-        `${MockCharacterUrl}/${character.id}`,
+        `${characterUrl}/${character.id}`,
         character
       );
     } else {
-      //insert
-      await axios.post<Character>(MockCharacterUrl, character);
+      //insert - no funciona por que hay que incluir el metodo POST en /server/src/index.ts
+      await axios.post<Character>(characterUrl, character);
     }
     return true;
   } catch (error) {
@@ -35,6 +32,3 @@ export const saveCharacter = async (character: Character): Promise<boolean> => {
     return false;
   }
 };
-
-//para enviar un solo campo
-//await axios.patch(`${characterUrl}/${character.id}`, {name: character.name});

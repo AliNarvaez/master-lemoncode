@@ -19,3 +19,11 @@ export interface CharacterEntityApi {
   created: string;
   bestSentence?: string;
 }
+
+
+export interface CharacterListResponse {
+  info: {
+    count: number;
+  };
+  results: CharacterEntityApi[];
+}

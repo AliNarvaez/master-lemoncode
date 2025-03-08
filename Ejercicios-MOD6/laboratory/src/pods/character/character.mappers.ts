@@ -7,6 +7,8 @@ export const mapCharacterFromApiToVm = (
   ...character,
   id: character.id,
   name: character.name,
+  species: character.species,
+  status: character.status,
   bestSentence: character.bestSentence,
 });
 
@@ -15,8 +17,7 @@ export const mapCharacterFromVmToApi = (character: viewModel.Character): apiMode
     ...character,
     id: character.id,
     name: character.name,
-    // shortDescription: character.description,
-    // hotelRating: hotel.rating,
-    // address1: hotel.address,
-    // city: hotel.city,
+    species: character.species,
+    status: character.status,
+    bestSentence: character.bestSentence,
   } as unknown) as apiModel.Character);
