@@ -1,0 +1,23 @@
+<header>
+  <div class="header__component">
+    <div class="header__logo">
+      <img src="logo_2.png" alt="" />
+    </div>
+    <div class="header__menu">
+      <nav>
+        <ul class="header__menu-container">
+          <li><a routerLink="/crud">CRUD</a></li>
+          <li><a routerLink="/dashboard">Dashboard</a></li>
+          <li><a routerLink="/profile">Profile</a></li>
+          <li><a routerLink="/gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__user">
+      <h2>Bienvenido, {{ getAuthService().getUsername() }}</h2>
+      <div class="header__button">
+        <button (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
